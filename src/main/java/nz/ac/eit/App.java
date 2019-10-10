@@ -8,7 +8,7 @@ public class App
     private static int randomRoll(){
         Random r = new Random();
         int low = 1;
-        int high = 10;
+        int high = 6;
         return r.nextInt(high-low) + low;
     }
 
