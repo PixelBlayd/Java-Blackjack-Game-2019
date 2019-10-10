@@ -22,3 +22,5 @@ REQ8: If the Computer's sum is lower than the Player, it will always "Hit".
 REQ9: The closest to 21 without going over is the winner.
 
 REQ10: The Player must be able to see the outcome of the match before finishing the application.
+
+For the sake of simplicity, the value "1" DOES NOT have the option to become "11" based on certain circumstances.
