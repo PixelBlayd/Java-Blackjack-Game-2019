@@ -54,7 +54,21 @@ public class App
         }
         /* If the player is still beatable and hasn't busted, move onto the computer's turn*/
         else{
+            computerTotal += 2 * randomRoll();
 
+            while((computerTotal < playerTotal) || (computerTotal < 21)){
+                System.out.println("Computer Total: " + computerTotal);
+                computerTotal +=  randomRoll();
+            }
+
+            if (computerTotal > 21){
+                System.out.println("The Computer has exceeded 21, YOU WIN!!! ");
+                System.exit(0);
+            }
+            else if (computerTotal > playerTotal){
+                System.out.println("The Computer's hand is higher, YOU LOSE :(");
+                System.exit(0);
+            }
         }
     }
 }
