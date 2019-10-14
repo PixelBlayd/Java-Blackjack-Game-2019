@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Java-Blackjack-Game-2019" />
         <module name="JavaBlackjackGame2019" />
       </profile>
     </annotationProcessing>
