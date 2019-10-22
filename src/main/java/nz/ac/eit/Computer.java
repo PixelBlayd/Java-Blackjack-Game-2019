@@ -5,7 +5,6 @@ public class Computer {
 
     public void ComputerTurn() {
         int computerTotal = 0;
-
         computerTotal += 2 * App.randomRoll();
 
         while((computerTotal < App.playerTotal) || (computerTotal < 21)){
