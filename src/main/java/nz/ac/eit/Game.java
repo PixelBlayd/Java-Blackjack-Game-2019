@@ -8,7 +8,7 @@ public class Game {
 
     }
     //Methods
-    public int randomRoll() {
+    public static int randomRoll() {
         Random r = new Random();
         int low = 1;
         int high = 6;
@@ -23,4 +23,5 @@ public class Game {
             return "";
         }
     }
+
 }

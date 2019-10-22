@@ -9,10 +9,9 @@ public class App {
     /* Where The Main part starts*/
 
     public static void main(String[] args) {
-
         Game game = new Game();
         Player player = new Player(2 * game.randomRoll());
-        Player computer = new Player(2 * game.randomRoll());
+        Computer computer = new Computer(2 * game.randomRoll());
         Scanner scan = new Scanner(System.in);
         String input = "";
 
@@ -25,7 +24,7 @@ public class App {
             input = input.toUpperCase();
 
             if (input.equals("HIT")) {
-                player.setScore(game.randomRoll());
+                player.setScore(player.getScore()+game.randomRoll());
                 if (player.getScore() >= 21) {
                     break;
                 }
@@ -37,6 +36,6 @@ public class App {
         }
         /* After Breaking out of the loop, the players turn is considered complete*/
         System.out.println(game.blackJackCheck(player.getScore()));
-
+        computer.ComputerTurn();
     }
 }
